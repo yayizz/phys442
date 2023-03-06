@@ -1,0 +1,53 @@
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.26/10                        https://root.cern |
+  | (c) 1995-2021, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Nov 16 2022, 10:42:54                 |
+  | From tags/v6-26-10@v6-26-10                                      |
+  | With c++ (GCC) 12.2.0                                            |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+Processing analyze-cs.C...
+mean of measurements with one sec period: 10.97
+std of measurements with one sec period: 3.08692
+mean of measurements with ten sec period: 103.33
+std of measurements with ten sec period: 10.0091
+fitting gaussian to measurements with one sec period
+ FCN=2.70413 FROM MIGRAD    STATUS=CONVERGED      59 CALLS          60 TOTAL
+                     EDM=3.65993e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  amplitude    4.13193e+01   5.25815e+00   5.13354e-03   2.34612e-05
+   2  mean         1.11598e+01   3.36296e-01   4.13801e-04   4.80708e-04
+   3  std          3.21421e+00   2.70027e-01   2.62628e-04   1.29898e-04
+                               ERR DEF= 0.5
+fitting poisson to measurements with one sec period
+ FCN=3.90452 FROM MIGRAD    STATUS=CONVERGED      31 CALLS          32 TOTAL
+                     EDM=8.03702e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  amplitude    3.35823e+02   3.37977e+01   4.85697e-02  -1.64640e-05
+   2  mean         1.12722e+01   3.60878e-01   5.21344e-04   2.02999e-03
+                               ERR DEF= 0.5
+fitting gaussian to measurements with ten sec period
+ FCN=5.35938 FROM MIGRAD    STATUS=CONVERGED      68 CALLS          69 TOTAL
+                     EDM=1.11483e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  amplitude    1.58086e+01   2.00453e+00   2.64449e-03   1.30040e-04
+   2  mean         1.03740e+02   1.06564e+00   1.77835e-03   1.93662e-06
+   3  std          1.02062e+01   8.65811e-01   1.13936e-03   4.89092e-04
+                               ERR DEF= 0.5
+fitting poisson to measurements with ten sec period
+ FCN=5.04864 FROM MIGRAD    STATUS=CONVERGED      53 CALLS          54 TOTAL
+                     EDM=1.83327e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  amplitude    4.04126e+02   4.04126e+01   6.54530e-02  -8.03352e-06
+   2  mean         1.03836e+02   1.06080e+00   1.72451e-03   2.63021e-04
+                               ERR DEF= 0.5
+1s gaus fit chi2/ndf: 2.90634
+1s poisson fit chi2/ndf: 2.85149
+10s gaus fit chi2/ndf: 0.980329
+10s poissons fit chi2/ndf: 0.868305
